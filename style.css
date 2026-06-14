@@ -146,6 +146,125 @@
   border-radius: 15px;
 }
 
+.section4 {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+  padding: 0 20px;
+}
+.section4 .kak {
+  padding: 25px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+.section4 .kak h1 {
+  font-size: 40px;
+  margin-bottom: 20px;
+  color: #1e2538;
+}
+.section4 .kak p {
+  color: #22253B;
+  font-size: 14px;
+  line-height: 1.6;
+}
+.section4 .video-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+  width: 100%;
+}
+.section4 .video-wrapper {
+  position: relative;
+  display: inline-block;
+  max-width: 900px;
+  width: 100%;
+}
+.section4 .video-wrapper .laptop-img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.section4 .video-wrapper .play-btn-block {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+.section4 .video-wrapper .play-btn-block:hover {
+  transform: translate(-50%, -50%) scale(1.05);
+}
+.section4 .video-wrapper .play-btn-block .play-circle {
+  width: 70px;
+  height: 70px;
+  background-color: #f15a24;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 4px 20px rgba(241, 90, 36, 0.4);
+}
+.section4 .video-wrapper .play-btn-block .play-circle img {
+  width: 100px;
+  height: auto;
+}
+.section4 .video-wrapper .play-btn-block span {
+  margin-top: 15px;
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 500;
+  text-shadow: 0 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.div5 {
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-radius: 30px;
+  background-color: white;
+  margin-top: 100px;
+  box-shadow: 0 0 10px gray;
+}
+.div5 h1 {
+  font-size: 65px;
+  color: #38BFF2;
+}
+.div5 h3 {
+  color: #22253B;
+}
+.div5 p {
+  color: #22253B;
+}
+
+.nachat {
+  box-shadow: 0 0 10px gray;
+  width: 500px;
+  height: 80px;
+  border-radius: 50px;
+  margin-top: 50px;
+  margin-left: 350px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+}
+.nachat button {
+  padding: 15px 40px;
+  background-color: #F15525;
+  color: white;
+  border-radius: 20px;
+  border: none;
+}
+
 @media (max-width: 500px) {
   .glavni {
     height: auto;
@@ -277,5 +396,29 @@
     align-items: center;
     gap: 20px;
     text-align: left;
+  }
+  .div5 {
+    display: flex;
+    flex-direction: column;
+  }
+  .div5 hr {
+    display: none;
+  }
+  .nachat {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0px;
+    margin-left: 0;
+    width: 330px;
+    height: 160px;
+  }
+  .nachat p {
+    font-size: 14px;
+  }
+  .nachat button {
+    width: 250px;
+    height: 70px;
+    margin-top: 20px;
+    border-radius: 50px;
   }
 }/*# sourceMappingURL=style.css.map */
