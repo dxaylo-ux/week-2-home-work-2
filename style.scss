@@ -1,0 +1,170 @@
+*
+{
+    font-family: sans-serif;
+}
+
+$colorp:#22253B;
+$sizep:13px;
+$colorbtn:#F15525;
+
+.glavni{
+ max-width: 1200px;
+ margin: auto;
+ background-color: #EAF2F5;
+ width: 100%;
+ height: 600px;
+ padding-top: 20px;
+ .div1{
+    width: 90%;
+    height: 60px;
+    background-color: white;
+    border: 1px solid white;
+    border-radius: 50px;
+    margin: auto;
+    .betwen{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        .med2{
+            display: none;
+        }
+        img{
+           margin-top: 10px;
+           margin-left: 30px; 
+        }
+       .chemu{
+        display: flex;
+        gap: 20px;
+        font-size: 13px;
+       margin: auto;
+       margin-left: 40px;
+       margin-top: 10px;
+       color:$colorp;
+       }
+       .regis{
+        display: flex;
+        gap: 20px;
+        font-size: $sizep;
+        margin-top: 10px;
+        button{
+            background-color: #38BFF2;
+            border: none;
+            border-radius: 20px;
+            width: 80px;
+            color: white;
+            margin-left: 20px;
+        }
+       }
+    }
+ }
+}
+.section1shkola{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 80px;
+    margin-left: 80px;
+    .flex{
+        display: flex;
+        gap: 200px;
+        
+    .column1{
+        display: flex;
+        flex-direction: column;
+        position: relative;
+       p{
+        color: $colorp;
+       }
+       button{
+        width: 230px;
+        height: 50px;
+        background-color:$colorbtn;
+        border: none;
+        color: white;
+        border-radius: 30px;
+       }
+       
+    }
+}
+ }
+
+ @media (max-width: 768px) {
+
+  .glavni {
+    height: auto;
+    padding-bottom: 30px;
+    
+
+    .div1 {
+      width: 95%;
+      height: auto;
+      padding: 15px 0;
+
+      .betwen {
+       display: flex;
+       justify-content: space-between;
+
+        .med2{
+            display: block; 
+        }
+
+        img {
+          margin: 0;
+        }
+
+        .chemu {
+         display: none;
+        }
+
+        .regis {
+          margin: 0;
+          align-items: center;
+
+        .rrr{
+            display: none;
+        }
+
+          button {
+            margin-left: 0;
+            height: 40px;
+            width: 100px;
+          }
+        }
+      }
+    }
+  }
+
+  .section1shkola {
+    margin: 40px 20px 0 20px;
+
+    .flex {
+      flex-direction: column;
+      gap: 40px;
+      align-items: center;
+      text-align: center;
+
+      .column1 {
+
+        h1 {
+          font-size: 28px;
+          line-height: 40px;
+        }
+
+        p {
+          font-size: 15px;
+        }
+
+        button {
+          width: 100%;
+          max-width: 250px;
+          margin: auto;
+        }
+      }
+
+      img {
+        width: 100%;
+        max-width: 400px;
+      }
+    }
+  }
+
+}

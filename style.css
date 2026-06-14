@@ -1,0 +1,144 @@
+* {
+  font-family: sans-serif;
+}
+
+.glavni {
+  max-width: 1200px;
+  margin: auto;
+  background-color: #EAF2F5;
+  width: 100%;
+  height: 600px;
+  padding-top: 20px;
+}
+.glavni .div1 {
+  width: 90%;
+  height: 60px;
+  background-color: white;
+  border: 1px solid white;
+  border-radius: 50px;
+  margin: auto;
+}
+.glavni .div1 .betwen {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.glavni .div1 .betwen .med2 {
+  display: none;
+}
+.glavni .div1 .betwen img {
+  margin-top: 10px;
+  margin-left: 30px;
+}
+.glavni .div1 .betwen .chemu {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  margin: auto;
+  margin-left: 40px;
+  margin-top: 10px;
+  color: #22253B;
+}
+.glavni .div1 .betwen .regis {
+  display: flex;
+  gap: 20px;
+  font-size: 13px;
+  margin-top: 10px;
+}
+.glavni .div1 .betwen .regis button {
+  background-color: #38BFF2;
+  border: none;
+  border-radius: 20px;
+  width: 80px;
+  color: white;
+  margin-left: 20px;
+}
+
+.section1shkola {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 80px;
+  margin-left: 80px;
+}
+.section1shkola .flex {
+  display: flex;
+  gap: 200px;
+}
+.section1shkola .flex .column1 {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+.section1shkola .flex .column1 p {
+  color: #22253B;
+}
+.section1shkola .flex .column1 button {
+  width: 230px;
+  height: 50px;
+  background-color: #F15525;
+  border: none;
+  color: white;
+  border-radius: 30px;
+}
+
+@media (max-width: 768px) {
+  .glavni {
+    height: auto;
+    padding-bottom: 30px;
+  }
+  .glavni .div1 {
+    width: 95%;
+    height: auto;
+    padding: 15px 0;
+  }
+  .glavni .div1 .betwen {
+    display: flex;
+    justify-content: space-between;
+  }
+  .glavni .div1 .betwen .med2 {
+    display: block;
+  }
+  .glavni .div1 .betwen img {
+    margin: 0;
+  }
+  .glavni .div1 .betwen .chemu {
+    display: none;
+  }
+  .glavni .div1 .betwen .regis {
+    margin: 0;
+    align-items: center;
+  }
+  .glavni .div1 .betwen .regis .rrr {
+    display: none;
+  }
+  .glavni .div1 .betwen .regis button {
+    margin-left: 0;
+    height: 40px;
+    width: 100px;
+  }
+  .section1shkola {
+    margin: 40px 20px 0 20px;
+  }
+  .section1shkola .flex {
+    flex-direction: column;
+    gap: 40px;
+    align-items: center;
+    text-align: center;
+  }
+  .section1shkola .flex .column1 h1 {
+    font-size: 28px;
+    line-height: 40px;
+  }
+  .section1shkola .flex .column1 p {
+    font-size: 15px;
+  }
+  .section1shkola .flex .column1 button {
+    width: 100%;
+    max-width: 250px;
+    margin: auto;
+  }
+  .section1shkola .flex img {
+    width: 100%;
+    max-width: 400px;
+  }
+}/*# sourceMappingURL=style.css.map */
