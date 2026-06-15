@@ -383,29 +383,27 @@ button {
         padding: 15px 20px;
         border-bottom: 1px solid #F0F0F0; 
 
-        // Махсусан барои сутуни якум
         &:first-child {
           color: #1A1A1A; 
           font-weight: 400;
         }
       }
       
-      // Бартараф кардани хатти поёни дар сатри охирини tbody
+
       &:last-child td {
         border-bottom: none;
       }
     }
   }
 
-  // Услуби сатри "Итого"
   tfoot {
     .total-row {
       td {
-        color: #1A1A1A; // Ранги тира
-        font-size: 18px; // Матни калонтар
-        font-weight: 700; // Матни ғафс
+        color: #1A1A1A; 
+        font-size: 18px; 
+        font-weight: 700; 
         padding: 20px 20px;
-        border-top: 2px solid #EAEAEA; // Хатти болоӣ барои ҷудо кардан
+        border-top: 2px solid #EAEAEA; 
       }
     }
   }
@@ -428,6 +426,40 @@ button {
   border: none;
 }
 }
+.footer{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+    p{
+        font-size: 14px;
+    }
+   
+.m15 {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+
+ .m16 {
+  display: flex;
+  flex-direction: column;
+   row-gap: 50px;
+}
+}
+.ytyt{
+    display: flex;
+    justify-content: space-between;
+     span{
+        color: gray;
+        font-size: 13px;
+        padding: 25px 20px;
+    }
+}
+}
+
+
 
         
  @media (max-width: 500px) {
@@ -652,6 +684,18 @@ flex-wrap: wrap;
         }
     }
 }
+.m15{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.ytyt{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+
 
 
 

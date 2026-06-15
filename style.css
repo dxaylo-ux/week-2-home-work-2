@@ -375,6 +375,37 @@
   border: none;
 }
 
+.footer {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+.footer p {
+  font-size: 14px;
+}
+.footer .m15 {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: auto;
+}
+.footer .m15 .m16 {
+  display: flex;
+  flex-direction: column;
+  row-gap: 50px;
+}
+.footer .ytyt {
+  display: flex;
+  justify-content: space-between;
+}
+.footer .ytyt span {
+  color: gray;
+  font-size: 13px;
+  padding: 25px 20px;
+}
+
 @media (max-width: 500px) {
   .glavni {
     height: auto;
@@ -560,5 +591,15 @@
   }
   .section6 .div6 p {
     color: #22253B;
+  }
+  .m15 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+  }
+  .ytyt {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
   }
 }/*# sourceMappingURL=style.css.map */
