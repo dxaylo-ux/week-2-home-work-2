@@ -265,6 +265,36 @@
   border: none;
 }
 
+.section5 {
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 100px;
+}
+.section5 .pomowdiv {
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+.section5 .pomowdiv img {
+  width: 250px;
+}
+.section5 .pomowdiv p {
+  font-size: 14px;
+  color: #22253B;
+}
+.section5 .pomowdiv h1 {
+  color: #22253B;
+}
+.section5 .pomowdiv div {
+  padding: 65px 40px;
+  border-radius: 35px;
+  background-color: #EAF2F5;
+  height: 200px;
+}
+
 @media (max-width: 500px) {
   .glavni {
     height: auto;
@@ -420,5 +450,9 @@
     height: 70px;
     margin-top: 20px;
     border-radius: 50px;
+  }
+  .pomowdiv {
+    display: flex;
+    flex-wrap: wrap;
   }
 }/*# sourceMappingURL=style.css.map */
