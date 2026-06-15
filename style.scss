@@ -325,6 +325,109 @@ button {
 
 }
 }
+.section6{
+    max-width: 1200px;
+    margin: auto;
+    margin-top: 100px;
+
+    .flex3{
+        display: flex;
+        justify-content: space-between;
+        div{
+            display: flex;
+            gap: 20px;
+        }
+        img{
+            width: 50px;
+            height: 50px;
+            margin-top: 20px;
+        }
+    }
+
+.m12-table-wrapper {
+  padding: 25px;
+  background-color: white;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1); // Сояи мулоимтар ба мисли image_7.png
+  border-radius: 30px;
+  margin-top: 40px; 
+  overflow: hidden; 
+}
+
+.m12-table {
+  width: 100%;
+  border-collapse: collapse;
+  table-layout: fixed; 
+
+  thead {
+    th {
+      color: #5096FF; 
+      font-size: 14px;
+      font-weight: 500;
+      text-align: left;
+      padding: 15px 20px;
+      border-bottom: 2px solid #EAEAEA;
+    }
+  }
+
+
+  tbody {
+    tr {
+     
+      &:nth-child(even) {
+        background-color: #F8F8F8;
+      }
+
+      td {
+        color: $colorp; 
+        font-size: 15px;
+        padding: 15px 20px;
+        border-bottom: 1px solid #F0F0F0; 
+
+        // Махсусан барои сутуни якум
+        &:first-child {
+          color: #1A1A1A; 
+          font-weight: 400;
+        }
+      }
+      
+      // Бартараф кардани хатти поёни дар сатри охирини tbody
+      &:last-child td {
+        border-bottom: none;
+      }
+    }
+  }
+
+  // Услуби сатри "Итого"
+  tfoot {
+    .total-row {
+      td {
+        color: #1A1A1A; // Ранги тира
+        font-size: 18px; // Матни калонтар
+        font-weight: 700; // Матни ғафс
+        padding: 20px 20px;
+        border-top: 2px solid #EAEAEA; // Хатти болоӣ барои ҷудо кардан
+      }
+    }
+  }
+}
+}
+.div6 {
+  padding: 25px 50px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ margin-top: 100px;
+ background-color: #EAF2F5;
+ border-radius: 20px;
+
+button {
+  padding: 15px 40px;
+  background-color: #F15525;
+  color: white;
+  border-radius: 50px;
+  border: none;
+}
+}
 
         
  @media (max-width: 500px) {
@@ -520,6 +623,36 @@ button {
 display: flex;
 flex-wrap: wrap;
 }
+.section6{
+    .flex3{
+        display: flex;
+        flex-direction: column;
+          
+        div{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            text-align: center;
+            img{
+               margin-left: 44%;
+            }
+        }
+    }
+    .div6{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        button{
+            width: 100%;
+            height: 60px;
+            font-size: 18px;
+        }
+        p{
+            color: $colorp;
+        }
+    }
+}
+
 
 
 }
